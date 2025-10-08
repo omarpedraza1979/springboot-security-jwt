@@ -102,12 +102,25 @@ Este proyecto es una demostración / plantilla para implementar autenticación y
 
 2. Login usuario registrado :
 
+curl -X POST http://localhost:8080/auth/login \
+  -H "Content-Type: application/json" \
+  -d '{
+        "username": "usuarioEjemplo",
+        "password": "claveSecreta"
+      }'
+
+
+   Este comando debería devolverte algo como:
+
+     {
+       "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.…"
+     }
+
 
 3. URL protegida por token :
 
-
-
-
+curl http://localhost:8080/api/hello \
+  -H "Authorization: Bearer eyJhbGci…"
 
 
 ## 🧪 Postman
