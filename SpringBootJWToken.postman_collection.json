@@ -1,0 +1,128 @@
+{
+	"info": {
+		"_postman_id": "d93fdee7-f299-45b8-85c4-5e45f844ff32",
+		"name": "SpringBootJWToken",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14420097"
+	},
+	"item": [
+		{
+			"name": "PostAuthLogin",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJjYXJsaXRvcyIsImlhdCI6MTc1NTYxNDczOSwiZXhwIjoxNzU1NzAxMTM5fQ.1ZGS4Ity7gwnm7eRy25tOXcGuQaPRlOy0TCDXmLXrho",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n     \"username\": \"omar\",\r\n     \"password\": \"omar123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/auth/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PostAuthRegister",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzYXNkYXNkIiwiaWF0IjoxNzU0OTQ5MDIxLCJleHAiOjE3NTUwMzU0MjF9.5oCenYDesG1hmWZkKhv8ONzbPdzJQdNMPCotNVwy7vw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n     \"username\": \"omar\",\r\n     \"password\": \"omar123\",\r\n     \"lastName\": \"gzon\",\r\n     \"firstName\": \"car\",\r\n     \"country\": \"Ecdor\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/auth/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"auth",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PostAuthDemo",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJvbWFyIiwiaWF0IjoxNzU5NTI4NTA0LCJleHAiOjE3NTk2MTQ5MDR9.VpNN4ZyaLWGwQCaBrFnWTLV0X4xAX7k_1OKOEvudmjA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/demo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"demo"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
