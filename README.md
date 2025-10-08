@@ -87,7 +87,7 @@ Este proyecto es una demostración / plantilla para implementar autenticación y
 
 ## 🧪 Ejemplo con CURL
 
-1. Registro de usuario : 
+**1. Registro de usuario : **
 
  curl -X POST http://localhost:8080/auth/register \
      -H "Content-Type: application/json" \
@@ -100,7 +100,7 @@ Este proyecto es una demostración / plantilla para implementar autenticación y
          }'
   
 
-2. Login usuario registrado :
+**2. Login usuario registrado :**
 
 curl -X POST http://localhost:8080/auth/login \
   -H "Content-Type: application/json" \
@@ -117,7 +117,7 @@ curl -X POST http://localhost:8080/auth/login \
      }
 
 
-3. URL protegida por token :
+**3. URL protegida por token :**
 
 curl http://localhost:8080/api/hello \
   -H "Authorization: Bearer eyJhbGci…"
