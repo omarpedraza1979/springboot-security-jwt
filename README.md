@@ -88,7 +88,7 @@ Este proyecto es una demostración / plantilla para implementar autenticación y
 ## 🧪 Ejemplo con CURL
 
 ---
-**1. Registro de usuario : **
+**1. Registro usuario :**
 
  curl -X POST http://localhost:8080/auth/register \
      -H "Content-Type: application/json" \
