@@ -87,7 +87,7 @@ Este proyecto es una demostración / plantilla para implementar autenticación y
 
 ## 🧪 Ejemplo con CURL
 
-
+---
 **1. Registro de usuario : **
 
  curl -X POST http://localhost:8080/auth/register \
@@ -100,7 +100,7 @@ Este proyecto es una demostración / plantilla para implementar autenticación y
              "country": "Ecdor"
          }'
   
-
+---
 **2. Login usuario registrado :**
 
 curl -X POST http://localhost:8080/auth/login \
@@ -117,10 +117,10 @@ curl -X POST http://localhost:8080/auth/login \
        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.…"
      }
 
-
+---
 **3. URL protegida por token :**
 
-curl http://localhost:8080/api/hello \
+curl http://localhost:8080/api/v1/demo
   -H "Authorization: Bearer eyJhbGci…"
 
 
